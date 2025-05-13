@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile
     container_name: running-shop-client
     ports:
-      - 8080:81
+      - 5173:81
   nginx:
     image: nginx:alpine
     container_name: nginx-app
