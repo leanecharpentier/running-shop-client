@@ -1,5 +1,14 @@
 <script setup>
 import { ref } from "vue";
+import { useI18n } from "vue-i18n";
+
+const { t, locale } = useI18n();
+
+const currentLanguage = locale;
+
+function toggleLanguage() {
+    locale.value = currentLanguage.value === "fr" ? "en" : "fr";
+}
 
 const isMenuOpen = ref(false);
 
@@ -21,12 +30,15 @@ const toggleMenu = () => {
             </button>
         </div>
         <nav :class="{ open: isMenuOpen }">
-            <RouterLink to="/clothes" @click="isMenuOpen = false">Vetements</RouterLink>
-            <RouterLink to="/shoes" @click="isMenuOpen = false">Chaussures</RouterLink>
-            <RouterLink to="/accessories" @click="isMenuOpen = false">Accessoires</RouterLink>
-            <RouterLink class="button-connexion" to="/connexion" @click="isMenuOpen = false"
-                >Se connecter</RouterLink
-            >
+            <RouterLink to="/clothes" @click="isMenuOpen = false">{{ $t("nav.clothes") }}</RouterLink>
+            <RouterLink to="/shoes" @click="isMenuOpen = false">{{ $t("nav.shoes") }}</RouterLink>
+            <RouterLink to="/accessories" @click="isMenuOpen = false">{{ $t("nav.accessories") }}</RouterLink>
+            <RouterLink class="button-connexion" to="/connexion" @click="isMenuOpen = false">{{
+                $t("nav.connexion")
+            }}</RouterLink>
+            <button class="button-language" @click="toggleLanguage">
+                {{ currentLanguage === "fr" ? "EN" : "FR" }}
+            </button>
         </nav>
     </div>
 </template>
@@ -94,6 +106,17 @@ const toggleMenu = () => {
             text-decoration: none;
             white-space: nowrap;
         }
+        .button-language{
+            font-family: "Koulen", sans-serif;
+            background-color: $green-light;
+            color: $white;
+            padding: 10px 20px;
+            border-radius: 200px;
+            border: none;
+            text-decoration: none;
+            white-space: nowrap;
+            cursor: pointer;
+        }
     }
 
     @media (max-width: 768px) {
@@ -120,11 +143,6 @@ const toggleMenu = () => {
             a {
                 font-size: 1rem;
             }
-        }
-
-        .button-connexion {
-            margin-top: 20px;
-            padding: 10px 15px;
         }
     }
 

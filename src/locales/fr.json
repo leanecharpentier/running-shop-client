@@ -1,0 +1,11 @@
+{
+    "nav": {
+        "clothes": "Vetements",
+        "shoes": "Chaussures",
+        "accessories": "Accessoires",
+        "connexion": "Se connecter"
+    },
+    "home": {
+        "title": "Accueil"
+    }
+}

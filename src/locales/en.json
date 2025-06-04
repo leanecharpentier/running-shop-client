@@ -1,0 +1,11 @@
+{
+    "nav": {
+        "clothes": "Clothes",
+        "shoes": "Shoes",
+        "accessories": "Accessories",
+        "connexion": "Login"
+    },
+    "home": {
+        "title": "Home"
+    }
+}
