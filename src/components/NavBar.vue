@@ -1,0 +1,145 @@
+<script setup>
+import { ref } from "vue";
+
+const isMenuOpen = ref(false);
+
+const toggleMenu = () => {
+    isMenuOpen.value = !isMenuOpen.value;
+};
+</script>
+
+<template>
+    <div class="navbar">
+        <div class="container-icon">
+            <RouterLink class="container-logo" to="/">
+                <img src="../assets/images/logo-noir.png" alt="Logo Running Shop Blanc" />
+            </RouterLink>
+            <button class="burger-menu" @click="toggleMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav :class="{ open: isMenuOpen }">
+            <RouterLink to="/clothes" @click="isMenuOpen = false">Vetements</RouterLink>
+            <RouterLink to="/shoes" @click="isMenuOpen = false">Chaussures</RouterLink>
+            <RouterLink to="/accessories" @click="isMenuOpen = false">Accessoires</RouterLink>
+            <RouterLink class="button-connexion" to="/connexion" @click="isMenuOpen = false"
+                >Se connecter</RouterLink
+            >
+        </nav>
+    </div>
+</template>
+
+<style scoped lang="scss">
+@use "../assets/variables.scss" as *;
+
+.navbar {
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $beige;
+    padding: 10px 30px;
+    width: 80vw;
+    border-radius: 30px;
+    margin: auto;
+
+    .container-icon {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        .container-logo {
+            width: 100px;
+            display: flex;
+            align-items: center;
+            img {
+                width: 100px;
+                height: auto;
+            }
+        }
+    }
+    .burger-menu {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: $black;
+        }
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        a {
+            font-family: "Koulen", sans-serif;
+            text-decoration: none;
+            color: $black;
+        }
+        .button-connexion {
+            font-family: "Koulen", sans-serif;
+            background-color: $black;
+            color: $white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding: 20px;
+        width: 90vw;
+
+        .burger-menu {
+            display: flex;
+        }
+
+        nav {
+            display: none;
+            flex-direction: column;
+            align-items: end;
+            gap: 10px;
+            width: 100%;
+            margin-top: 20px;
+
+            &.open {
+                display: flex;
+            }
+
+            a {
+                font-size: 1rem;
+            }
+        }
+
+        .button-connexion {
+            margin-top: 20px;
+            padding: 10px 15px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .container-logo img {
+            width: 80px;
+        }
+
+        nav a {
+            font-size: 0.9rem;
+        }
+
+        .button-connexion {
+            font-size: 0.9rem;
+        }
+    }
+}
+</style>
