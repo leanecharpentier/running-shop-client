@@ -1,6 +1,7 @@
 export async function getProducts() {
     try {
-        const response = await fetch("http://localhost:3000/api/v1/products", {
+        const baseUrl = import.meta.env.VITE_API_BASE_URL;
+        const response = await fetch(`${baseUrl}/products`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",

@@ -30,11 +30,11 @@ const toggleMenu = () => {
             </button>
         </div>
         <nav :class="{ open: isMenuOpen }">
-            <RouterLink to="/clothes" @click="isMenuOpen = false">{{ $t("nav.clothes") }}</RouterLink>
-            <RouterLink to="/shoes" @click="isMenuOpen = false">{{ $t("nav.shoes") }}</RouterLink>
-            <RouterLink to="/accessories" @click="isMenuOpen = false">{{ $t("nav.accessories") }}</RouterLink>
-            <RouterLink class="button-connexion" to="/connexion" @click="isMenuOpen = false">{{
-                $t("nav.connexion")
+            <RouterLink to="/clothes" @click="isMenuOpen = false">{{ $t("clothes.title") }}</RouterLink>
+            <RouterLink to="/shoes" @click="isMenuOpen = false">{{ $t("shoes.title") }}</RouterLink>
+            <RouterLink to="/accessories" @click="isMenuOpen = false">{{ $t("accessories.title") }}</RouterLink>
+            <RouterLink class="button-login" to="/login" @click="isMenuOpen = false">{{
+                $t("login.button")
             }}</RouterLink>
             <button class="button-language" @click="toggleLanguage">
                 {{ currentLanguage === "fr" ? "EN" : "FR" }}
@@ -97,7 +97,7 @@ const toggleMenu = () => {
             text-decoration: none;
             color: $black;
         }
-        .button-connexion {
+        .button-login {
             font-family: "Koulen", sans-serif;
             background-color: $black;
             color: $white;
@@ -155,7 +155,7 @@ const toggleMenu = () => {
             font-size: 0.9rem;
         }
 
-        .button-connexion {
+        .button-login {
             font-size: 0.9rem;
         }
     }

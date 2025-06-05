@@ -1,10 +1,4 @@
 {
-    "nav": {
-        "clothes": "Vetements",
-        "shoes": "Chaussures",
-        "accessories": "Accessoires",
-        "connexion": "Se connecter"
-    },
     "home": {
         "title": "Accueil"
     },
@@ -16,5 +10,22 @@
     },
     "accessories": {
         "title": "Accessoires"
+    },
+    "login": {
+        "title": "Heureux de vous revoir !",
+        "email": "Ton email",
+        "password": "Ton mot de passe",
+        "text": "Vous avez déjà un compte chez nous ? Connectez-vous",
+        "button": "Se connecter"
+    },
+    "signin": {
+        "title": "Bienvenue !",
+        "lastname": "Nom",
+        "firstname": "Prénom",
+        "email": "Email",
+        "phone": "Numéro de téléphone",
+        "password": "Mot de passe",
+        "text": "Vous n'avez pas encore de compte chez nous ? Inscrivez-vous !",
+        "button": "S'inscrire"
     }
 }

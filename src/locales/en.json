@@ -16,5 +16,22 @@
     },
     "accessories": {
         "title": "Accessories"
+    },
+    "login": {
+        "title": "Welcome back!",
+        "email": "Your email",
+        "password": "Your password",
+        "text": "Already have an account with us? Log in",
+        "button": "Log in"
+    },
+    "signin": {
+        "title": "Welcome!",
+        "lastname": "Last name",
+        "firstname": "First name",
+        "email": "Email",
+        "phone": "Phone number",
+        "password": "Password",
+        "text": "Don't have an account with us yet? Sign up!",
+        "button": "Sign up"
     }
 }
