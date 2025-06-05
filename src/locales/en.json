@@ -7,5 +7,14 @@
     },
     "home": {
         "title": "Home"
+    },
+    "clothes": {
+        "title": "Clothes"
+    },
+    "shoes": {
+        "title": "Shoes"
+    },
+    "accessories": {
+        "title": "Accessories"
     }
 }

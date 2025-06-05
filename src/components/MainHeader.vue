@@ -44,7 +44,7 @@ header {
     .content {
         position: relative;
         z-index: 2;
-        padding: 30px;
+        padding-top: 30px;
         display: flex;
         flex-direction: column;
         justify-content: space-between; /* Espace entre les éléments */
