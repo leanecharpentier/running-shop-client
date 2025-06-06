@@ -15,7 +15,7 @@ const errorMessage = ref("");
 async function handleSubmit() {
     try {
         await login({ email: email.value, password: password.value });
-        router.push("/");
+        router.push("/dashboard/products");
     } catch (error) {
         errorMessage.value = error.message || t("login.error");
     }

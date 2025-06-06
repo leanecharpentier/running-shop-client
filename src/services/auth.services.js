@@ -17,6 +17,7 @@ export async function login({ email, password }) {
         const data = await response.json();
 
         localStorage.setItem("authToken", data.token);
+        localStorage.setItem("userId", data.userId);
 
         return data;
     } catch (error) {

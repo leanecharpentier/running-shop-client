@@ -18,14 +18,65 @@
         "text": "Vous avez déjà un compte chez nous ? Connectez-vous",
         "button": "Se connecter"
     },
-    "signin": {
-        "title": "Bienvenue !",
-        "lastname": "Nom",
-        "firstname": "Prénom",
-        "email": "Email",
-        "phone": "Numéro de téléphone",
-        "password": "Mot de passe",
-        "text": "Vous n'avez pas encore de compte chez nous ? Inscrivez-vous !",
-        "button": "S'inscrire"
+    "dashboard": {
+        "products": {
+            "title": "Mes produits",
+            "btn-add": "Ajouter +",
+            "no-products": "Aucun produit n'a été ajouté",
+            "form": {
+                "label": {
+                    "title": "Nom du produit",
+                    "label": "Choisi le type du produit",
+                    "tshirt": "T-shirt",
+                    "short": "Short"
+                },
+                "gendered": {
+                    "title": "Genre",
+                    "label": "Choisi le genre du produit",
+                    "men": "Homme",
+                    "women": "Femme"
+                },
+                "size": {
+                    "title": "Taille",
+                    "label": "Choisi la taille du produit"
+                },
+                "colours": {
+                    "title": "Couleur",
+                    "label": "Choisi la couleur du produit",
+                    "black": "Noir",
+                    "white": "Blanc",
+                    "red": "Rouge",
+                    "blue": "Bleu",
+                    "pink": "Rose",
+                    "grey": "Gris",
+                    "green": "Vert",
+                    "purple": "Violet",
+                    "yellow": "Jaune",
+                    "navy": "Bleu marine"
+                },
+                "price": {
+                    "title": "Prix unitaire",
+                    "label": "Le prix du produit"
+                },
+                "quantity": {
+                    "title": "En stock",
+                    "label": "La quantité de ce produit"
+                }
+            },
+            "add": {
+                "title": "Ajouter un produit",
+                "submit": "Ajouter"
+            },
+            "update": {
+                "title": "Modifier le produit",
+                "submit": "Modifier"
+            }
+        },
+        "profile": {
+            "title": "Mon profil"
+        },
+        "messaging": {
+            "title": "Messagerie"
+        }
     }
 }

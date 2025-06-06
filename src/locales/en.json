@@ -24,14 +24,65 @@
         "text": "Already have an account with us? Log in",
         "button": "Log in"
     },
-    "signin": {
-        "title": "Welcome!",
-        "lastname": "Last name",
-        "firstname": "First name",
-        "email": "Email",
-        "phone": "Phone number",
-        "password": "Password",
-        "text": "Don't have an account with us yet? Sign up!",
-        "button": "Sign up"
+    "dashboard": {
+        "products": {
+            "title": "My products",
+            "btn-add": "Add +",
+            "no-products": "No products have been added",
+            "form": {
+                "label": {
+                    "title": "Product name",
+                    "label": "Choose the product type",
+                    "tshirt": "T-shirt",
+                    "short": "Shorts"
+                },
+                "gendered": {
+                    "title": "Gender",
+                    "label": "Choose the product gender",
+                    "men": "Men",
+                    "women": "Women"
+                },
+                "size": {
+                    "title": "Size",
+                    "label": "Choose the product size"
+                },
+                "colours": {
+                    "title": "Color",
+                    "label": "Choose the product color",
+                    "black": "Black",
+                    "white": "White",
+                    "red": "Red",
+                    "blue": "Blue",
+                    "pink": "Pink",
+                    "grey": "Gray",
+                    "green": "Green",
+                    "purple": "Purple",
+                    "yellow": "Yellow",
+                    "navy": "Navy blue"
+                },
+                "price": {
+                    "title": "Unit price",
+                    "label": "The product price"
+                },
+                "quantity": {
+                    "title": "In stock",
+                    "label": "The quantity of this product"
+                }
+            },
+            "add": {
+                "title": "Add a product",
+                "submit": "Add"
+            },
+            "udpate": {
+                "title": "Update this product",
+                "submit": "Update"
+            }
+        },
+        "profile": {
+            "title": "My profile"
+        },
+        "messaging": {
+            "title": "Messaging"
+        }
     }
 }

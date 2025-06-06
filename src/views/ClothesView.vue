@@ -19,7 +19,9 @@ onMounted(async () => {
 <template>
     <MainHeader :title="t('clothes.title')" />
     <section class="product-section">
-        <CardProduct v-for="product in products" :key="product.id"
+        <CardProduct
+            v-for="product in products"
+            :key="product.id"
             :imgUrl="product.imgUrl"
             :productName="product.label"
             :gender="product.gendered"
@@ -43,5 +45,4 @@ section {
     column-gap: 30px;
     row-gap: 30px;
 }
-
 </style>
