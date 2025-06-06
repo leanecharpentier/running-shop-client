@@ -8,7 +8,6 @@ import { createApp } from "vue";
 import { createI18n } from "vue-i18n";
 
 import App from "./App.vue";
-import "./assets/main.css";
 import "./assets/main.scss";
 import en from "../public/locales/en.json";
 import fr from "../public/locales/fr.json";
