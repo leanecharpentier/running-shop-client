@@ -9,8 +9,3 @@ const { t } = useI18n();
 <template>
     <MainHeader :title="t('home.title')" />
 </template>
-
-<style scoped lang="scss">
-@use "../assets/variables.scss" as *;
-
-</style>
