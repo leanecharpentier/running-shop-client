@@ -9,8 +9,8 @@ import { createI18n } from "vue-i18n";
 
 import App from "./App.vue";
 import "./assets/main.scss";
-import en from "../public/locales/en.json";
-import fr from "../public/locales/fr.json";
+import en from "./locales/en.json";
+import fr from "./locales/fr.json";
 import router from "./router";
 
 library.add(faEdit, faTrash);

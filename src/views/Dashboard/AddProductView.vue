@@ -132,6 +132,7 @@ main {
                 width: 100%;
                 background-color: $beige;
                 border-radius: 100px;
+                border: none;
                 padding: 12px 24px;
                 font-size: 1rem;
                 font-family: "Arial", sans-serif;

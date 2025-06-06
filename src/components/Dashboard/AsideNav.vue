@@ -60,6 +60,7 @@ aside {
         background-color: $beige;
         padding: 8px 24px;
         border-radius: 20px;
+        border: none;
     }
 }
 </style>

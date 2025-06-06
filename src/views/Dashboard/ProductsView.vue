@@ -54,7 +54,7 @@ async function handleDelete(productId) {
                         <td>{{ product.quantity }}</td>
                         <td class="icons-actions">
                             <RouterLink :to="{ name: 'update-product', params: { id: product.idProduct } }">
-                                <font-awesome-icon icon="edit" />
+                                <font-awesome-icon class="icon-edit" icon="edit" />
                             </RouterLink>
                             <form @submit.prevent="handleDelete(product.idProduct)">
                                 <button type="submit" class="btn-delete">
@@ -133,6 +133,13 @@ main {
                     flex-direction: row;
                     align-items: center;
                     justify-content: center;
+                    .icon-edit {
+                        color: $black;
+                    }
+                    .btn-delete {
+                        background-color: $beige;
+                        border: none;
+                    }
                 }
             }
         }
